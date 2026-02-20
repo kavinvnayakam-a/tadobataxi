@@ -1,3 +1,34 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-tiger",
+      "description": "A majestic Bengal tiger in the wild at Tadoba",
+      "imageUrl": "https://images.unsplash.com/photo-1641621284598-657224fdff19?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx0aWdlciUyMHdpbGRsaWZlfGVufDB8fHx8MTc3MTU2OTUxM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "tiger wildlife"
+    },
+    {
+      "id": "safari-jeep",
+      "description": "Open-top safari jeep in the jungle",
+      "imageUrl": "https://images.unsplash.com/photo-1554369369-2efa1c2be9d6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzYWZhcmklMjBqZWVwfGVufDB8fHx8MTc3MTU4OTgwMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "safari jeep"
+    },
+    {
+      "id": "luxury-cab",
+      "description": "Comfortable SUV for long distance travel",
+      "imageUrl": "https://images.unsplash.com/photo-1506015391300-4802dc74de2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzdXYlMjBjYXJ8ZW58MHx8fHwxNzcxNTg5ODAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "suv car"
+    },
+    {
+      "id": "tadoba-lake",
+      "description": "Beautiful landscape of Tadoba lake",
+      "imageUrl": "https://images.unsplash.com/photo-1559244673-9cee88d551f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8anVuZ2xlJTIwbGFrZXxlbnwwfHx8fDE3NzE1ODk4MDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "jungle lake"
+    },
+    {
+      "id": "driver-portrait",
+      "description": "Professional driver smiling",
+      "imageUrl": "https://images.unsplash.com/photo-1547406722-a2c81c1c9e7e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxkcml2ZXIlMjBwZXJzb258ZW58MHx8fHwxNzcxNTg5ODAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "driver person"
+    }
+  ]
 }
