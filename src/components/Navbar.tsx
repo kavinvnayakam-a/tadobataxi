@@ -32,10 +32,10 @@ export function Navbar() {
           </div>
           <div className="flex flex-col leading-none">
             <span className="text-xl font-black tracking-tighter uppercase text-slate-900 leading-none">
-              TIGER<span className="text-orange-600">TAXI</span>
+              TADOBA<span className="text-orange-600">TAXI</span>
             </span>
             <span className="text-[10px] font-bold tracking-[0.2em] text-slate-400 uppercase mt-1">
-              Nagpur's No.1 Taxi
+              Tadoba No.1 Taxi
             </span>
           </div>
         </Link>
@@ -53,7 +53,6 @@ export function Navbar() {
               <span className={pathname === link.href ? 'text-orange-600' : 'text-slate-300 group-hover:text-orange-500 transition-colors'}>
                 {link.icon}
               </span>
-              {/* FIXED: Changed {label} to {link.label} */}
               {link.label}
             </Link>
           ))}
@@ -62,7 +61,7 @@ export function Navbar() {
         {/* --- ACTIONS --- */}
         <div className="flex items-center gap-4">
           <Link 
-            href="tel:+919876543210" 
+            href="tel:+917775948732" 
             className="hidden xl:flex items-center gap-2 text-emerald-700 font-bold text-sm bg-emerald-50 px-4 py-2 rounded-full border border-emerald-100 hover:bg-emerald-100 transition-colors"
           >
             <Phone size={16} className="fill-emerald-700" />
@@ -90,7 +89,6 @@ export function Navbar() {
                     <span className="font-black tracking-tighter uppercase text-slate-900">MENU</span>
                   </div>
 
-                  {/* Navigation Links */}
                   <div className="flex flex-col gap-8">
                     {navLinks.map((link) => (
                       <SheetClose asChild key={link.href}>
@@ -109,7 +107,6 @@ export function Navbar() {
                     ))}
                   </div>
 
-                  {/* Footer Action */}
                   <div className="mt-auto space-y-6">
                     <SheetClose asChild>
                       <Button className="w-full bg-orange-600 hover:bg-orange-700 text-white rounded-full font-black uppercase italic py-7 shadow-lg shadow-orange-200" asChild>

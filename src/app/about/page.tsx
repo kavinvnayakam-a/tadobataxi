@@ -38,7 +38,7 @@ export default function AboutPage() {
                 "We spent 10 years mastering the forest roads. Now, we're making it easier for you to find us."
               </p>
               <p className="text-slate-500 leading-relaxed font-medium">
-                Tadoba Wheels started as a local fleet service for wildlife enthusiasts. For over a decade, we operated through word-of-mouth, building a reputation for reaching the safari gates before the first light.
+                Tadoba Taxi started as a local fleet service for wildlife enthusiasts. For over a decade, we operated through word-of-mouth, building a reputation for reaching the safari gates before the first light.
               </p>
               <p className="text-slate-500 leading-relaxed font-medium">
                 Today, we have stepped into the <strong>Digital World</strong>. While our booking process is now high-tech, our soul remains in the jungle. We combine 10 years of on-ground expertise with modern technology to give you a seamless expedition experience.

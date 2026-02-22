@@ -29,7 +29,7 @@ export function Footer() {
                 <PawPrint className="h-6 w-6" />
               </div>
               <span className="text-2xl font-black tracking-tighter uppercase">
-                Tiger<span className="text-orange-600">Taxi</span>
+                Tadoba<span className="text-orange-600">Taxi</span>
               </span>
             </Link>
             <p className="text-slate-500 text-sm leading-relaxed">
@@ -47,6 +47,7 @@ export function Footer() {
             <h4 className="font-black text-sm uppercase tracking-[0.2em] mb-6 text-slate-900">Explore</h4>
             <ul className="space-y-4">
               <FooterLink href="/safari" label="Safari Information" />
+              <FooterLink href="/tiger-info" label="Tiger Info" />
               <FooterLink href="/tariff" label="Cab Tariff" />
               <FooterLink href="/about" label="About Our Fleet" />
               <FooterLink href="/contact" label="Help Center" />
@@ -70,14 +71,14 @@ export function Footer() {
             <h4 className="font-black text-sm uppercase tracking-[0.2em] mb-6 text-slate-900">Connect</h4>
             <ContactItem icon={<MapPin size={18} />} text="Civil Lines, Nagpur, MH" />
             <ContactItem icon={<Phone size={18} />} text="+91 77759 48732" />
-            <ContactItem icon={<Mail size={18} />} text="bookings@tadobawheels.com" />
+            <ContactItem icon={<Mail size={18} />} text="bookings@tadobataxi.com" />
           </div>
         </div>
         
         {/* Bottom Bar */}
         <div className="border-t border-slate-100 py-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">
-            © {new Date().getFullYear()} Tiger Taxi Cab Services
+            © {new Date().getFullYear()} Tadoba Taxi Cab Services
           </p>
           <div className="flex gap-8 text-[10px] font-black uppercase tracking-widest text-slate-400">
             <Link href="/privacy" className="hover:text-orange-600 transition-colors">Privacy Policy</Link>
@@ -89,7 +90,6 @@ export function Footer() {
   );
 }
 
-// Helper Components
 function FooterLink({ href, label }: { href: string; label: string }) {
   return (
     <li>

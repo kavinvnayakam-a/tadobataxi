@@ -60,8 +60,8 @@ export default function ContactPage() {
                     <Mail size={18} className="fill-orange-600/10" />
                     <span className="text-[10px] font-black uppercase tracking-widest text-slate-400">Email Us</span>
                   </div>
-                  <p className="text-lg font-black text-slate-900 tracking-tight">info@tadobawheels.com</p>
-                  <p className="text-sm font-bold text-slate-500 italic">bookings@tadoba.com</p>
+                  <p className="text-lg font-black text-slate-900 tracking-tight">info@tadobataxi.com</p>
+                  <p className="text-sm font-bold text-slate-500 italic">bookings@tadobataxi.com</p>
                 </div>
 
                 <div className="space-y-3">
@@ -117,7 +117,7 @@ export default function ContactPage() {
                 
                 <div className="space-y-3">
                   <label className="text-[10px] font-black uppercase tracking-widest text-slate-400 ml-2">Email Address</label>
-                  <Input type="email" placeholder="kavin@getpik.com" className="rounded-2xl border-slate-200 py-6 bg-white" required />
+                  <Input type="email" placeholder="kavin@tadobataxi.com" className="rounded-2xl border-slate-200 py-6 bg-white" required />
                 </div>
 
                 <div className="space-y-3">

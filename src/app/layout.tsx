@@ -6,19 +6,19 @@ import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
   title: {
-    default: 'Tiger Taxi | Nagpur to Tadoba Premium Cab Service',
-    template: '%s | Tiger Taxi'
+    default: 'Tadoba Taxi | Nagpur to Tadoba Premium Cab Service',
+    template: '%s | Tadoba Taxi'
   },
-  description: 'Book premium Nagpur to Tadoba cabs with Tiger Taxi. 10+ years of wildlife transit expertise. Transparent pricing, expert drivers, and 24/7 safari support.',
-  keywords: ['Tadoba cab booking', 'Nagpur to Tadoba taxi', 'Tiger Taxi Nagpur', 'Tadoba safari taxi', 'Nagpur airport to Tadoba'],
+  description: 'Book premium Nagpur to Tadoba cabs with Tadoba Taxi. 10+ years of wildlife transit expertise. Transparent pricing, expert drivers, and 24/7 safari support.',
+  keywords: ['Tadoba cab booking', 'Nagpur to Tadoba taxi', 'Tadoba Taxi Nagpur', 'Tadoba safari taxi', 'Nagpur airport to Tadoba'],
   openGraph: {
-    title: 'Tiger Taxi | Premium Tadoba Expeditions',
+    title: 'Tadoba Taxi | Premium Tadoba Expeditions',
     description: 'Nagpur’s most trusted wildlife transit partner for over a decade.',
-    url: 'https://tigertaxi.in', // Replace with your actual domain
-    siteName: 'Tiger Taxi',
+    url: 'https://tadobataxi.in',
+    siteName: 'Tadoba Taxi',
     images: [
       {
-        url: '/og-image.jpg', // Create a 1200x630 image with your logo and a tiger
+        url: '/og-image.jpg',
         width: 1200,
         height: 630,
       },
@@ -33,15 +33,14 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // JSON-LD Structured Data for Local Business
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "TaxiService",
-    "name": "Tiger Taxi",
-    "image": "https://tigertaxi.in/logo.png",
-    "@id": "https://tigertaxi.in",
-    "url": "https://tigertaxi.in",
-    "telephone": "+919876543210",
+    "name": "Tadoba Taxi",
+    "image": "https://tadobataxi.in/logo.png",
+    "@id": "https://tadobataxi.in",
+    "url": "https://tadobataxi.in",
+    "telephone": "+917775948732",
     "priceRange": "₹3500 - ₹12000",
     "address": {
       "@type": "PostalAddress",
@@ -76,7 +75,6 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        {/* Injecting Structured Data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
