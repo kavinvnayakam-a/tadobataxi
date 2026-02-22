@@ -5,6 +5,7 @@ import { Footer } from '@/components/Footer';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://tadobataxi.com'),
   title: {
     default: 'Tadoba Taxi | Nagpur to Tadoba Premium Cab Service',
     template: '%s | Tadoba Taxi'
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Tadoba Taxi | Premium Tadoba Expeditions',
     description: 'Nagpur’s most trusted wildlife transit partner for over a decade.',
-    url: 'https://tadobataxi.in',
+    url: 'https://tadobataxi.com',
     siteName: 'Tadoba Taxi',
     images: [
       {
@@ -37,9 +38,9 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "TaxiService",
     "name": "Tadoba Taxi",
-    "image": "https://tadobataxi.in/logo.png",
-    "@id": "https://tadobataxi.in",
-    "url": "https://tadobataxi.in",
+    "image": "https://tadobataxi.com/logo.png",
+    "@id": "https://tadobataxi.com",
+    "url": "https://tadobataxi.com",
     "telephone": "+917775948732",
     "priceRange": "₹3500 - ₹12000",
     "address": {

@@ -2,6 +2,8 @@ import { tadobaTigerInformation } from '@/ai/flows/tadoba-tiger-information-flow
 import { PawPrint, Star, Info, Target, Zap, ShieldCheck } from 'lucide-react';
 import Image from 'next/image';
 
+export const dynamic = 'force-dynamic';
+
 export default async function TigerInfoPage() {
   const data = await tadobaTigerInformation({});
 

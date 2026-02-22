@@ -63,13 +63,13 @@ export function TigerCount() {
           </div>
           
           <p className="mt-2 text-sm font-bold text-slate-500 uppercase tracking-wide">
-            Tigers in Tadoba Reserve
+            Tigers in Tadoba Taxi Reserve
           </p>
           
           {/* Progress Bar Detail */}
           <div className="mt-3 h-1.5 w-full bg-slate-100 rounded-full overflow-hidden">
             <div 
-              className="h-full bg-orange-500 rounded-full transition-all duration-[2000ms] ease-out"
+              className="h-full bg-orange-500 rounded-full transition-all duration-[2s] ease-out"
               style={{ width: `${(count / 150) * 100}%` }}
             />
           </div>
