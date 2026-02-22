@@ -1,4 +1,4 @@
 import { config } from 'dotenv';
 config();
 
-import '@/ai/flows/tadoba-tiger-information-flow.ts';
+// Flows are imported here to be registered with Genkit

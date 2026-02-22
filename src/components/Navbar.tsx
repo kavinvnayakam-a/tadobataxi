@@ -16,7 +16,6 @@ export function Navbar() {
 
   const navLinks = [
     { href: '/safari', icon: <Compass size={16} />, label: 'Safari Info' },
-    { href: '/tiger-info', icon: <PawPrint size={16} />, label: 'Tiger Info' },
     { href: '/tariff', icon: <Car size={16} />, label: 'Tariff' },
     { href: '/about', icon: <Info size={16} />, label: 'About' },
   ];

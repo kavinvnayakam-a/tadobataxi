@@ -47,7 +47,6 @@ export function Footer() {
             <h4 className="font-black text-sm uppercase tracking-[0.2em] mb-6 text-slate-900">Explore</h4>
             <ul className="space-y-4">
               <FooterLink href="/safari" label="Safari Information" />
-              <FooterLink href="/tiger-info" label="Tiger Info" />
               <FooterLink href="/tariff" label="Cab Tariff" />
               <FooterLink href="/about" label="About Our Fleet" />
               <FooterLink href="/contact" label="Help Center" />
