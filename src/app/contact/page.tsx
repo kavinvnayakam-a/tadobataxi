@@ -1,7 +1,6 @@
-
 "use client";
 
-import { Mail, Phone, MapPin, Clock, Send } from 'lucide-react';
+import { Mail, Phone, MapPin, Clock, Send, Zap, MessageSquare, ShieldAlert } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -13,101 +12,125 @@ export default function ContactPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast({
-      title: "Message Sent!",
-      description: "We've received your message and will get back to you within 24 hours.",
+      title: "EXPEDITION LOGGED!",
+      description: "Our team will reach out to you within 2 working hours.",
     });
     (e.target as HTMLFormElement).reset();
   };
 
   return (
-    <div className="container mx-auto px-4 py-12 space-y-16">
-      <div className="max-w-4xl mx-auto text-center space-y-4">
-        <h1 className="text-4xl md:text-5xl font-bold text-primary font-headline">Contact Us</h1>
-        <p className="text-lg text-muted-foreground">Have questions? We're here to help you plan your safari trip.</p>
+    <div className="min-h-screen bg-white pb-24">
+      {/* --- HERO HEADER --- */}
+      <div className="bg-slate-900 text-white py-24 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]" />
+        <div className="container mx-auto px-6 relative z-10 text-center">
+          <div className="inline-flex items-center gap-2 bg-orange-600/20 border border-orange-600/30 px-4 py-2 rounded-full mb-6">
+            <MessageSquare className="h-4 w-4 text-orange-500" />
+            <span className="text-[10px] font-black tracking-[0.3em] uppercase text-orange-500">Always Connected</span>
+          </div>
+          <h1 className="text-5xl md:text-7xl font-black tracking-tighter uppercase italic leading-none mb-6">
+            GET IN <span className="text-orange-600">TOUCH</span>
+          </h1>
+          <p className="text-slate-400 max-w-xl mx-auto font-medium">
+            Planning a trip to the tiger reserve? Our experts are available 24/7 to assist with your transit needs.
+          </p>
+        </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-        <div className="space-y-8">
-          <div className="bg-white p-8 rounded-3xl shadow-lg border border-primary/5 space-y-6">
-            <h2 className="text-2xl font-bold text-primary font-headline">Get in Touch</h2>
-            
-            <div className="flex items-start gap-4">
-              <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
-                <Phone className="h-5 w-5" />
-              </div>
-              <div>
-                <h4 className="font-bold">Call Us</h4>
-                <p className="text-muted-foreground">+91 91234 56789</p>
-                <p className="text-muted-foreground">+91 712 2543210</p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4">
-              <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
-                <Mail className="h-5 w-5" />
-              </div>
-              <div>
-                <h4 className="font-bold">Email Us</h4>
-                <p className="text-muted-foreground">info@tadobawheels.com</p>
-                <p className="text-muted-foreground">bookings@tadobawheels.com</p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4">
-              <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
-                <MapPin className="h-5 w-5" />
-              </div>
-              <div>
-                <h4 className="font-bold">Our Office</h4>
-                <p className="text-muted-foreground">123 Civil Lines, Near Airport Road, Nagpur, Maharashtra 440001</p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4">
-              <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
-                <Clock className="h-5 w-5" />
-              </div>
-              <div>
-                <h4 className="font-bold">Working Hours</h4>
-                <p className="text-muted-foreground">Open 24/7 for Safari Bookings & Cab Support</p>
-              </div>
-            </div>
-          </div>
+      <div className="container mx-auto px-6 -mt-12 relative z-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-7xl mx-auto">
           
-          <div className="bg-primary rounded-3xl p-8 text-white shadow-xl">
-            <h3 className="text-xl font-bold mb-2">Emergency Help?</h3>
-            <p className="text-sm opacity-90 mb-4">If you are already at Tadoba and need a quick pickup, call our dedicated SOS line:</p>
-            <div className="text-2xl font-bold text-secondary">+91 99999 88888</div>
-          </div>
-        </div>
+          {/* --- CONTACT INFO PANEL --- */}
+          <div className="space-y-8">
+            <div className="bg-white p-10 md:p-12 rounded-[3rem] shadow-2xl border border-slate-100 space-y-10">
+              <h2 className="text-3xl font-black text-slate-900 uppercase italic tracking-tighter">Expedition <span className="text-orange-600">HQ</span></h2>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="space-y-3">
+                  <div className="flex items-center gap-2 text-orange-600">
+                    <Phone size={18} className="fill-orange-600/10" />
+                    <span className="text-[10px] font-black uppercase tracking-widest text-slate-400">Call Support</span>
+                  </div>
+                  <p className="text-lg font-black text-slate-900 tracking-tight">+91 77759 48732</p>
+                  <p className="text-sm font-bold text-slate-500 italic">+91 77759 48732</p>
+                </div>
 
-        <div className="bg-white p-10 rounded-3xl shadow-xl border border-primary/10">
-          <form onSubmit={handleSubmit} className="space-y-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="space-y-2">
-                <label className="text-sm font-bold text-primary">First Name</label>
-                <Input placeholder="John" required />
-              </div>
-              <div className="space-y-2">
-                <label className="text-sm font-bold text-primary">Last Name</label>
-                <Input placeholder="Doe" required />
+                <div className="space-y-3">
+                  <div className="flex items-center gap-2 text-orange-600">
+                    <Mail size={18} className="fill-orange-600/10" />
+                    <span className="text-[10px] font-black uppercase tracking-widest text-slate-400">Email Us</span>
+                  </div>
+                  <p className="text-lg font-black text-slate-900 tracking-tight">info@tadobawheels.com</p>
+                  <p className="text-sm font-bold text-slate-500 italic">bookings@tadoba.com</p>
+                </div>
+
+                <div className="space-y-3">
+                  <div className="flex items-center gap-2 text-orange-600">
+                    <MapPin size={18} className="fill-orange-600/10" />
+                    <span className="text-[10px] font-black uppercase tracking-widest text-slate-400">Location</span>
+                  </div>
+                  <p className="text-sm font-bold text-slate-700 leading-relaxed italic">
+                    123 Civil Lines, Near Airport Road, Nagpur, Maharashtra 440001
+                  </p>
+                </div>
+
+                <div className="space-y-3">
+                  <div className="flex items-center gap-2 text-orange-600">
+                    <Clock size={18} className="fill-orange-600/10" />
+                    <span className="text-[10px] font-black uppercase tracking-widest text-slate-400">Working Hours</span>
+                  </div>
+                  <p className="text-sm font-bold text-slate-700 leading-relaxed italic">
+                    Open 24/7 for Safari Bookings & Cab Support
+                  </p>
+                </div>
               </div>
             </div>
             
-            <div className="space-y-2">
-              <label className="text-sm font-bold text-primary">Email Address</label>
-              <Input type="email" placeholder="john@example.com" required />
+            {/* SOS / EMERGENCY CARD */}
+            <div className="bg-orange-600 rounded-[3rem] p-10 text-white shadow-2xl shadow-orange-200 relative overflow-hidden group transition-transform hover:scale-[1.02]">
+              <Zap className="absolute -right-4 -bottom-4 h-32 w-32 opacity-20 rotate-12 group-hover:rotate-0 transition-transform duration-500" />
+              <div className="relative z-10">
+                <div className="flex items-center gap-2 mb-4">
+                    <ShieldAlert className="h-6 w-6" />
+                    <h3 className="text-xl font-black uppercase italic tracking-tighter">In-Jungle SOS</h3>
+                </div>
+                <p className="text-sm font-bold text-orange-100 mb-6 leading-relaxed">Already at Tadoba and need an emergency pickup? Call our 24/7 SOS line:</p>
+                <div className="text-4xl font-black italic tracking-tighter">+91 77759 48732</div>
+              </div>
             </div>
+          </div>
 
-            <div className="space-y-2">
-              <label className="text-sm font-bold text-primary">Your Message</label>
-              <Textarea placeholder="How can we help you plan your Tadoba trip?" className="min-h-[150px]" required />
-            </div>
+          {/* --- CONTACT FORM --- */}
+          <div className="bg-slate-50 p-10 md:p-14 rounded-[4rem] border border-slate-200">
+            <form onSubmit={handleSubmit} className="space-y-8">
+              <div className="space-y-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="space-y-3">
+                    <label className="text-[10px] font-black uppercase tracking-widest text-slate-400 ml-2">First Name</label>
+                    <Input placeholder="Kavin" className="rounded-2xl border-slate-200 py-6 focus:ring-orange-600 focus:border-orange-600 bg-white" required />
+                  </div>
+                  <div className="space-y-3">
+                    <label className="text-[10px] font-black uppercase tracking-widest text-slate-400 ml-2">Last Name</label>
+                    <Input placeholder="V" className="rounded-2xl border-slate-200 py-6 focus:ring-orange-600 focus:border-orange-600 bg-white" required />
+                  </div>
+                </div>
+                
+                <div className="space-y-3">
+                  <label className="text-[10px] font-black uppercase tracking-widest text-slate-400 ml-2">Email Address</label>
+                  <Input type="email" placeholder="kavin@getpik.com" className="rounded-2xl border-slate-200 py-6 bg-white" required />
+                </div>
 
-            <Button type="submit" className="w-full bg-primary hover:bg-primary/90 text-white py-6 flex items-center gap-2 text-lg">
-              <Send className="h-5 w-5" /> Send Message
-            </Button>
-          </form>
+                <div className="space-y-3">
+                  <label className="text-[10px] font-black uppercase tracking-widest text-slate-400 ml-2">Message</label>
+                  <Textarea placeholder="Tell us about your trip plans..." className="rounded-[2rem] border-slate-200 min-h-[180px] bg-white p-6" required />
+                </div>
+              </div>
+
+              <Button type="submit" className="w-full bg-slate-900 hover:bg-black text-white py-8 rounded-full flex items-center justify-center gap-3 text-lg font-black uppercase italic shadow-2xl transition-all hover:scale-[1.02]">
+                <Send className="h-5 w-5" /> Send Message
+              </Button>
+            </form>
+          </div>
         </div>
       </div>
     </div>

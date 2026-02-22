@@ -1,51 +1,50 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 129 44% 94%;
+    /* Base Colors: Soft White/Greenish Tint Background */
+    --background: 120 15% 98%; 
     --foreground: 122 43% 10%;
+    
     --card: 0 0% 100%;
     --card-foreground: 122 43% 10%;
+    
     --popover: 0 0% 100%;
     --popover-foreground: 122 43% 10%;
-    --primary: 122 43% 39%;
-    --primary-foreground: 129 44% 98%;
-    --secondary: 80 61% 50%;
-    --secondary-foreground: 122 43% 10%;
-    --muted: 129 20% 85%;
-    --muted-foreground: 122 20% 30%;
-    --accent: 80 61% 50%;
+    
+    /* Primary: Tiger Orange */
+    --primary: 24 95% 53%; 
+    --primary-foreground: 0 0% 100%;
+    
+    /* Secondary: Deep Jungle Green */
+    --secondary: 154 50% 18%;
+    --secondary-foreground: 0 0% 100%;
+    
+    --muted: 129 20% 92%;
+    --muted-foreground: 122 20% 40%;
+    
+    /* Accent: Bright Leaf Green */
+    --accent: 142 70% 45%;
     --accent-foreground: 122 43% 10%;
+    
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 122 20% 80%;
-    --input: 122 20% 85%;
-    --ring: 122 43% 39%;
-    --radius: 0.75rem;
+    
+    --border: 122 20% 90%;
+    --input: 122 20% 90%;
+    --ring: 24 95% 53%;
+    
+    /* RedTaxi-style rounded corners */
+    --radius: 1.5rem;
   }
+
   .dark {
     --background: 122 43% 5%;
     --foreground: 129 44% 94%;
-    --card: 122 43% 8%;
-    --card-foreground: 129 44% 94%;
-    --popover: 122 43% 8%;
-    --popover-foreground: 129 44% 94%;
-    --primary: 122 43% 39%;
-    --primary-foreground: 129 44% 98%;
-    --secondary: 80 61% 40%;
-    --secondary-foreground: 129 44% 94%;
-    --muted: 122 20% 15%;
-    --muted-foreground: 129 20% 70%;
-    --accent: 80 61% 40%;
-    --accent-foreground: 129 44% 94%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 122 20% 20%;
-    --input: 122 20% 20%;
-    --ring: 122 43% 39%;
+    --primary: 24 95% 53%;
+    --ring: 24 95% 53%;
   }
 }
 
@@ -54,9 +53,40 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground font-body;
+    @apply bg-background text-foreground font-body antialiased;
+    /* Smooth scrolling for the roadmap navigation */
+    scroll-behavior: smooth; 
   }
   h1, h2, h3, h4, h5, h6 {
-    @apply font-headline;
+    @apply font-headline tracking-tight;
   }
+}
+
+@layer utilities {
+  /* Helper for the SVG path animation if needed */
+  .path-round {
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  
+  /* Custom glass effect used in the roadmap cards */
+  .glass-card {
+    @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-xl;
+  }
+}
+
+/* Custom Scrollbar to match the Tiger theme */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+::-webkit-scrollbar-thumb {
+  background: #ea580c; /* Orange thumb */
+  border-radius: 5px;
+  border: 3px solid hsl(var(--background));
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c2410c;
 }

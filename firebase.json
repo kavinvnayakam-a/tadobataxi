@@ -1,0 +1,39 @@
+{
+  "indexes": [],
+  "fieldOverrides": [],
+  "apphosting": [
+    {
+      "backendId": "tadobataxibackend",
+      "rootDir": "main",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "functions"
+      ]
+    },
+    {
+      "backendId": "tadobataxibackend",
+      "rootDir": "studio",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "functions"
+      ]
+    },
+    {
+      "backendId": "tadobataxibackend",
+      "rootDir": "/",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "functions"
+      ]
+    }
+  ]
+}
